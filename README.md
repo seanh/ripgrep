@@ -91,7 +91,7 @@ Other quickfix list commands:
 * <kbd><kbd>]</kbd><kbd>Q</kbd></kbd> and <kbd><kbd>[</kbd><kbd>Q</kbd></kbd> for `:cfirst` and `:clast`
 * <kbd><kbd>]</kbd> <kbd><kbd>Ctrl</kbd> + <kbd>q</kbd></kbd></kbd> and <kbd><kbd>[</kbd> <kbd><kbd>Ctrl</kbd> + <kbd>q</kbd></kbd></kbd> for `:cnfile` and `:cpfile`
 
-You can also run `:lgrep` and `:lgrepa` to put the results into vim's _location list_
+You can also run `:lgrep` and `:lgrepadd` to put the results into vim's _location list_
 instead of into the quickfix list. The location list is a per-window quickfix list.
 It has all the same commands as for working with the quickfix list, but they all begin with `l` instead of `c`:
 `:llN`, `:lnext`, `:lprev`, etc.
