@@ -96,3 +96,15 @@ instead of into the quickfix list. The location list is a per-window quickfix li
 It has all the same commands as for working with the quickfix list, but they all begin with `l` instead of `c`:
 `:llN`, `:lnext`, `:lprev`, etc.
 vim-unimpaired also provides all the same shortcuts for the location list as for the quickfix list, but with l instead of q: <kbd><kbd>]</kbd><kbd>l</kbd></kbd> and <kbd><kbd>[</kbd><kbd>l</kbd></kbd> etc.
+
+ctrlp.vim Integration
+---------------------
+
+If you use the [ctrlp.vim](http://ctrlpvim.github.io/ctrlp.vim/) plugin for opening files you can configure it to use
+`rg --files` to get the list of filenames to be searched. This means that CtrlP gets the right list of files (excludes
+files from your `.gitignore` etc) and makes it lightning fast:
+
+    if executable("rg")
+        let g:ctrlp_user_command = 'rg --files --sort=none'
+        let g:ctrlp_use_caching = 0
+    endif
