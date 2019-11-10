@@ -75,11 +75,6 @@ Other quickfix list commands:
 * `:cfirst` and `:clast` jump to the very first/last result (or `:cfirst N`/`:clast N` to go to the Nth result). `:crewind` is also an alias for `:cfirst`
 * `:colder` and `:cnewer` move to the next oldest and newest quickfix lists. Vim remembers the last 10 quickfix lists and lets you move between them. `:Ncolder` and `:Ncnewer` also work
 
-You can also run `:lgrep` instead of `:grep` to put the results into vim's _location list_
-instead of into the quickfix list. The location list is a per-window quickfix list.
-It has all the same commands as for working with the quickfix list, but they all begin with `l` instead of `c`:
-`:llN`, `:lnext`, `:lprev`, etc.
-
 [vim-unimpaired](https://github.com/tpope/vim-unimpaired) adds a bunch of keyboard shortcuts for navigating the quickfix list:
 
 *  <kbd><kbd>]</kbd><kbd>q</kbd></kbd> and <kbd><kbd>[</kbd><kbd>q</kbd></kbd> for `:cnext` and `:cprev`
