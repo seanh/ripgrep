@@ -34,13 +34,14 @@ Installation
 ------------
 
 ```terminal
-git clone git@github.com:seanh/ripgrep.git ~/.ripgrep
+sudo apt install --yes git ripgrep
+git clone 'https://github.com/seanh/ripgrep.git' ~/.ripgrep
 ```
 
 Now tell ripgrep to use the rc file from this repo. Put this in your `~/.bashrc`:
 
 ```bash
-export RIPGREP_CONFIG_PATH="~/.ripgrep/rc"
+export RIPGREP_CONFIG_PATH=~/.ripgrep/rc
 ```
 
 Or for fish, put this in `~/.config/fish/config.fish`:
