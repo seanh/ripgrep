@@ -33,6 +33,10 @@ Features
 Installation
 ------------
 
+Enable Ubuntu's "Community-maintained free and open-source
+software (universe)" option in the **Software & Updates** app,
+then:
+
 ```terminal
 sudo apt install --yes git ripgrep
 git clone 'https://github.com/seanh/ripgrep.git' ~/.ripgrep
