@@ -12,7 +12,7 @@ Features
 * Still ignores files that're ignored by your `.gitignore` or other VCS ignore files.
 * Doesn't search the `.git` directory. Normally if you turn on hidden files with
   `--hidden` ripgrep will search `.git` directories (unless they're listed in
-  `.gitinore`, which they usually aren't)
+  `.gitignore`, which they usually aren't)
 
 * Turns on smart-case by default: searches will be case-insensitive, but if the search
   term contains any capital letters then the entire search becomes case-sensitive.
